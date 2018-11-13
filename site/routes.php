@@ -3,5 +3,5 @@
 if ($path == '/'){
    echo 'site';
 } else{
-    echo 'Página não encontrada';
+    echo 'Página não encontrada 2';
 }
