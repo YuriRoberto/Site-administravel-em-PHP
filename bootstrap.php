@@ -3,22 +3,22 @@
 function resolve($route){
     $path = $_SERVER['PATH_INFO'] ?? '/';
 
-    $route = '/^\/([a-z]+)$/';
+    $route = '/^' . str_replace('/', '\/' ,$route) . '$/';
 
-    if (preg_match($route, '/')){
-        echo 'encontrou';
-    } else {
-        echo 'não deu';
-    }
+    if (preg_match($route, $path, $params)){
+        return $params;
+    } 
+
+    return false;
 
 }
 
 
 
-if($path == '/'){
-    require __DIR__ . '/site/routes.php';
-} elseif ($path == 'admin'){
+
+
+if(resolve('/admin/?(.*)')){
     require __DIR__ . '/admin/routes.php';
-} else {
-    echo 'Página não encontrada';
+} elseif (resolve('/(.*)')){
+    require __DIR__ . '/site/routes.php';
 }
