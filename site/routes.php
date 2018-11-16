@@ -1,9 +1,9 @@
 <?php
 
-if (resolve('/admin')){
-   echo 'administracao';
-} elseif (resolve('/admin/pages')){
-    echo 'administracao de paginas';
+if (resolve('/')){
+   render('site/home', 'site');
+} elseif (resolve('contato')){
+    render('site/contato', 'site');
 } else{
     echo 'Página não encontrada';
 }
