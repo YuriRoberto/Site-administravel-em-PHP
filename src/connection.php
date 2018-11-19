@@ -2,5 +2,4 @@
 
 mysqli_report(MYSQLI_REPORT_ERROR);
 
-$conn = new mysqli('localhost', 'root', '1234', 'pp_criando_site_com_php');
-a;
+$conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWD, DB_NAME);
