@@ -12,7 +12,42 @@
     <title>Painel Administrativo da School of Net!</title>
   </head>
   <body>
-    <?php include $content?>
+    <div id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="" class="navbar-brand">AdminSON</a>
+            <span class="navbar-text">
+                Painel administrativo da School of Net
+            </span>
+        </nav>
+
+    </div>
+
+
+    <div id="main">
+        <div class="row">
+            <div class="col">Menu
+            
+                <ul class="nav flex-column nav-pills bg-secondary text-white p-2">
+                    <li class="nav-item">
+                        <span class="nav-link text-white-50"><small>MENU</small></span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link active">Páginas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Usuários</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-10">
+                <?php include $content?>
+            </div>
+        </div>
+        
+    
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
