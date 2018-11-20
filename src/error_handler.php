@@ -1,19 +1,25 @@
 <?php 
 
-function setInternalServerError($errno, $errstr, $errfile, $errline){
+function setInternalServerError($errno = null, $errstr = null, $errfile = null, $errline = null){
+    http_response_code(500);
     echo '<h1>Error</h1>';
     
+    if(!DEBUG){
+        exit;
+    }
+
     echo '<span style="font-weight: bold; color: red">';
     switch ($errno){
         case E_USER_ERROR:
             echo '<strong>ERROR</strong> [' . $errno . '] ' . $errstr . "<br>\n";
+            echo 'Fatal error on line ' . $errline . ' in file' . $errfile;
             break;
 
-        case E_USER_ERROR:
+        case E_USER_WARNING:
             echo '<strong>WARNING</strong> [' . $errno . '] ' . $errstr . "<br>\n";
             break;  
             
-        case E_USER_ERROR:
+        case E_USER_NOTICE:
             echo '<strong>NOTICE</strong> [' . $errno . '] ' . $errstr . "<br>\n";
             break;    
         
