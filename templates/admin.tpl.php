@@ -15,7 +15,7 @@
   <body class="d-flex flex-column">
     <div id="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a href="" class="navbar-brand">AdminSON</a>
+            <a href="" class="navbar-brand">Adminlson</a>
             <span class="navbar-text">
                 Painel administrativo da School of Net
             </span>
