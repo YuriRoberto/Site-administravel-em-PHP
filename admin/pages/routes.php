@@ -13,7 +13,7 @@ if (resolve('/admin/pages')){
     }
     render('admin/pages/create', 'admin');
 
-} elseif ($params = resolve('(/admin/pages/)(\d+)')){
+} elseif ($params = resolve('/admin/pages/(\d+)')){
     
     $page = $pages_one($params[1]);
     render('admin/pages/view', 'admin', ['page' => $page]);
