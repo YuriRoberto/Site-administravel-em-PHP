@@ -6,7 +6,10 @@ if(resolve('/admin')){
 } elseif (resolve('/admin/pages.*')){
     include __DIR__ . '/pages/routes.php';
 
-}  else {
+} elseif (resolve('/admin/users.*')){
+    include __DIR__ . '/users/routes.php';
+
+} else {
     echo 'Página não encontrada';
 
 }
