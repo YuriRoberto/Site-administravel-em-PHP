@@ -13,7 +13,7 @@
             <td>1</td>
             <td>yurirobertocm@gmail.com</td>
             <td class="text-right">
-                <a href="" class="btn btn-primary btn-sm">Ver</a>
+                <a href="/admin/users/1" class="btn btn-primary btn-sm">Ver</a>
             </td>
 
         </tr>
@@ -22,4 +22,4 @@
 
 </table>
 
-<a href="/admin/pages/users" class="btn btn-secondary">Novo</a>
+<a href="/admin/users/create" class="btn btn-secondary">Novo</a>

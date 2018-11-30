@@ -9,7 +9,7 @@ if(resolve('/admin/users')){
     render('admin/users/create', 'admin');
 
 } elseif(resolve('/admin/users/(\d+)')){
-    render('admin/users/create', 'admin');
+    render('admin/users/view', 'admin');
 
 } elseif(resolve('/admin/users/(\d+)/edit')){
     render('admin/users/edit', 'admin');
