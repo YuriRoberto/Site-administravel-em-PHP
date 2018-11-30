@@ -18,4 +18,4 @@
 
 <hr>
 
-<a href="/admin/users" class="btn btn-secondary">Voltar</a>
+<a href="/admin/users/1" class="btn btn-secondary">Voltar</a>

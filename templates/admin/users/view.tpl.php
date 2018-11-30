@@ -19,6 +19,5 @@
 
 </p>
 
-<hr>
 
 <a href="/admin/users" class="btn btn-secondary">Voltar</a>
