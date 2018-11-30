@@ -63,6 +63,13 @@ $pages_edit = function($id) use($conn){
     flash('Atualizou registro com sucesso','sucess');
 };
 
-$pages_delete = function($id){
+$pages_delete = function($id) use($conn){
+
+    $sql = 'DELETE FROM pages WHERE id= ?';
+
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param('i', $id );
+
     flash('Removeu registro com sucesso','sucess');
+    return $stmt->execute();
 };
