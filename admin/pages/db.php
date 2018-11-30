@@ -48,7 +48,18 @@ $pages_create = function() use ($conn) {
 
 };
 
-$pages_edit = function($id){
+$pages_edit = function($id) use($conn){
+    $data = pages_get_data('/admin/pages/' . $id . '/edit');
+
+    $sql = 'UPDATE pages SET title = ?, body= ?, url= ?, updated= NOW() WHERE id=?';
+
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param('sssi', $data['title'], $data['body'], $data['url'], $id );
+
+    flash('Criou registro com sucesso','sucess');
+
+    return $stmt->execute();
+    
     flash('Atualizou registro com sucesso','sucess');
 };
 
