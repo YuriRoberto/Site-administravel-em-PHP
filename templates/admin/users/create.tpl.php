@@ -12,8 +12,10 @@
         <input id="usersPassword" type="password" name="password" class="form-control" placeholder="Sua senha...">
     </div>
 
-    <button type="submit" class=>Salvar</button>
+    <button type="submit" class="btn btn-primary" >Salvar</button>
 
 </form>
+
+<br>
 
 <a href="/admin/users" class="btn btn-secondary">Voltar</a>
