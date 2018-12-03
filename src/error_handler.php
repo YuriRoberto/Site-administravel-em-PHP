@@ -43,5 +43,5 @@ function setInternalServerError($errno = null, $errstr = null, $errfile = null, 
     exit;
 }
 
-set_error_handler('setIternalServerError');
-set_exception_handler('setIternalServerError');
+set_error_handler('setInternalServerError');
+set_exception_handler('setInternalServerError');
