@@ -10,7 +10,7 @@ if(resolve('/admin')){
     include __DIR__ . '/users/routes.php';
 
 } elseif (resolve('/admin/upload/image')){
-    echo 'deu certo';
+    echo json_encode();
 
 } else {
     echo 'Página não encontrada';

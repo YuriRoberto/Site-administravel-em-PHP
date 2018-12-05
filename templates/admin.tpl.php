@@ -75,7 +75,17 @@
                 method: 'POST',
                 data: form,
                 contentType: false,
-                processData: falese
+                processData: false,
+                xhr: function (){
+                    const xhr = $.ajaxSettings.xhr();
+                    xhr.upload.addEventListener('progress', function(e){
+                        let progress = e.loaded / e.total * 100;
+                        attachment.setUploadProgress(progress);
+                    })
+
+                    return xhr;
+
+                }
             }).done(function(){
                 console.log('deu certo');
             }).fail(function(){
