@@ -86,8 +86,12 @@
                     return xhr;
 
                 }
-            }).done(function(){
-                console.log('deu certo');
+            }).done(function(response){
+                console.log(response);
+                attachment.setAttributes({
+                    url: response,
+                    href: response
+                });
             }).fail(function(){
                 console.log('deu errado')
             });
