@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/resources/trix/trix.css">
     <link rel="stylesheet" href="/resources/pnotify/pnotify.custom.min.css">
@@ -17,7 +18,7 @@
   <body class="d-flex flex-column">
     <div id="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a href="" class="navbar-brand">Adminlson</a>
+            <a href="/admin" class="navbar-brand">Adminlson</a>
             <span class="navbar-text">
                 Painel administrativo da School of Net
             </span>
@@ -35,10 +36,10 @@
                         <span class="nav-link text-white-50"><small>MENU</small></span>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link active">Páginas</a>
+                        <a href="/admin/pages" class="nav-link<?php if(resolve('/admin/pages.*')): ?> active<?php endif; ?>"><i class="far fa-file-alt"></i> Páginas</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Usuários</a>
+                        <a href="/admin/users" class="nav-link<?php if(resolve('/admin/users.*')): ?> active<?php endif; ?>"><i class="far fa-user"></i> Usuários</a>
                     </li>
                 </ul>
 

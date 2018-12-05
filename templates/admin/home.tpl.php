@@ -1,4 +1,23 @@
-<h3>Página inicial</h3>
+<h3>Bem vindo ao painel de gerenciamento</h3>
 
-<a href="/admin/pages">Administrar páginas</a>
+<p>O que você quer fazer agora?</p>
+
+<p>
+    <a href="" class="btn btn-primary btn-lg">
+        <span style="font-size: 40px">
+            <i class="far fa-user"></i><br>
+        </span>
+        Gerenciar páginas
+
+    </a>
+
+    <a href="" class="btn btn-success btn-lg">
+        <span style="font-size: 40px">
+            <i class="far fa-file-alt"></i><br>
+        </span>
+        Gerenciar usuários
+        
+    </a>
+
+</p>
 
