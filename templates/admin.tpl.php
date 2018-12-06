@@ -17,11 +17,14 @@
   </head>
   <body class="d-flex flex-column">
     <div id="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a href="/admin" class="navbar-brand">Adminlson</a>
-            <span class="navbar-text">
-                Painel administrativo da School of Net
+        <nav class="navbar navbar-dark bg-dark">
+            <span>
+                <a href="/admin" class="navbar-brand">Adminlson</a>
+                <span class="navbar-text">
+                    Painel administrativo da School of Net
+                </span>
             </span>
+            <a href="/admin/auth/logout" class="btn btn-danger"><i class="fas fa-sign-out-alt"></i></a>    
         </nav>
 
     </div>

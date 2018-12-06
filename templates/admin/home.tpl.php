@@ -3,7 +3,7 @@
 <p>O que você quer fazer agora?</p>
 
 <p>
-    <a href="" class="btn btn-primary btn-lg">
+    <a href="/admin/pages" class="btn btn-primary btn-lg">
         <span style="font-size: 40px">
             <i class="far fa-user"></i><br>
         </span>
@@ -11,7 +11,7 @@
 
     </a>
 
-    <a href="" class="btn btn-success btn-lg">
+    <a href="/admin/users" class="btn btn-success btn-lg">
         <span style="font-size: 40px">
             <i class="far fa-file-alt"></i><br>
         </span>
