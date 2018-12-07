@@ -17,6 +17,6 @@ if(resolve('/admin/auth/login')) {
     }
     
     render('admin/auth/login', 'admin/login');
-} elseif (resolve('/admin/auth/login')){
+} elseif (resolve('/admin/auth/logout')){
     logout();
 }
